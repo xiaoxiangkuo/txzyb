@@ -1,0 +1,115 @@
+@charset "gb2312";
+/* CSS Document */
+*{
+	margin:0px auto;
+	padding:0;}
+	body{
+	font-family:"Microsoft YaHei","Î¢ÈíÑÅºÚ","Ó×Ô²","ËÎÌå","sans-serif";
+	font-size:12px;
+	margin:0 auto;
+	color:#232323;
+	}
+#logo{
+	height:87px;
+	width:100%;
+    background:url(images/logobg.jpg) repeat-x scroll left top transparent;
+	margin:0px auto;
+	}
+.logopic{
+	width: 1000px;
+margin: 0px auto;
+height: 87px;
+background:url(images/logo.png)  no-repeat scroll left top transparent;
+	}
+.home a{
+	float: left;
+    width: 488px;
+    height: 87px;
+	}
+#news{
+	width:100%;
+	margin:0px auto;
+	background:#D5D5D5;}
+#newscontent{
+	width:1000px;
+	background:#FFF;
+	}
+#pic{
+	width:100%;
+	height:150px;
+	background:url(images/normal.png) no-repeat;
+	}
+.address{
+		height:30px;
+		line-height:30px;
+		padding:10px;
+		text-align:right;
+	}
+.address a{
+	text-decoration:none;
+	color:#242424;}
+.address a:hover{
+	color:#2A1FFF;}
+#title{
+	font-size:18px;
+	font-weight:bold;
+	text-align:center;
+	height:25px;
+	line-height:25px;
+	}
+#author{
+	width:450px;
+	text-align:center;
+	font-size:15px;
+	text-align:center;
+	height:30px;
+	line-height:20px;
+	}
+#newsinner{
+	LINE-HEIGHT:130%;
+	font-size:14px;
+	text-indent:30px;
+	letter-spacing:3px;
+	width:960px;
+	min-height:200px;
+	height:auto;
+	padding:20px;
+	}
+.date{width:200px;float:left;
+	text-align:center;}
+.author{ width:150px;float:left;
+	text-align:center;}
+.times{width:100px;float:left;
+	text-align:center;}
+	#content{
+		background:#FFF;
+		width:1000px;
+		height:auto;}
+#copyright{
+	width:100%;
+	height:87px;
+	background:#2d2d2d;
+	}
+#copyright p{
+	padding-top:20px;
+	color:#FFF;
+	font-size:12px;
+	text-align:center;
+	line-height:13px;}
+table{
+	text-align:center;}
+tr{
+	border:1px solid #808080;}
+.jixu{
+	width:1000px;;
+	background:#FFF;
+	height:20px;
+	padding-top:10px;
+	}
+.jixu a{
+	color:#242424;
+	text-decoration:none;
+	float:right;
+	margin-right:20px;
+	
+	}

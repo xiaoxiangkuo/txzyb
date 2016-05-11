@@ -1,0 +1,11 @@
+@charset "gb2312";
+/* CSS Document */
+*{
+	margin:0 auto;
+	padding:0px;
+	}
+
+#all{
+	width:100%;
+	height:100;
+	}

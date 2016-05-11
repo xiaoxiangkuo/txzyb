@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>团日活动寻宣誓仪式</title>
+<meta charset='utf-8'/>
+<style>
+*{
+	margin:0 auto;
+	padding:0px;
+	font-family:"微软雅黑";
+	}
+#all{
+	width:100%;
+	overflow:hidden;
+	height:758px;
+	background:url(25.jpg) no-repeat;
+	position:relative;
+	}
+#namebox{
+	width:600px;
+	height:240px;
+	position:absolute;
+	top:200px;
+	right:10px;
+	color:#2c2c2d;
+	font-size:25px;
+	line-height:30px;
+	}
+#tip{
+	width:120px;
+	height:60px;
+	position:absolute;
+	top:150px;
+	right:-110px;
+	background:#fff;
+	opacity:0.4;
+	cursor:pointer;
+	font-size:30px;
+	text-align:center;
+	line-height:60px;
+	}
+#tip p{
+	width:100px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	color:#fff;
+	margin-top:18px;
+	border-radius:3px;
+	background:#222a2e;
+	font-size:18px;
+	}
+</style>
+</head>
+<body>
+<div id="all">
+<div id="namebox"></div>
+<div id="tip" class="tip"><p onclick="bgcx()">开始</p></div>
+</div>
+</body>
+    <script src="../js/jquery.js"></script>
+<script>
+$(".tip").bind({click:function(e){
+	$("#tip").animate({right:"0px"});	
+	},mouseleave:function(e){
+	$("#tip").animate({right:"-110px"});
+	}})
+var listnumber=0;
+function getname(){
+	$.ajax({
+	type:'POST',
+	url:'do.php',
+	data:{'action':"getname",'bg':listnumber},
+	success:function(data){
+		msg=data.split("@txzy");
+		if(msg[0]=='1'){
+			namelist=msg[1].split("&&");
+			i=1;
+			interval = setInterval(setText, 1000);
+			len=namelist.length-1;
+			listnumber=listnumber+len;
+			}
+		else{
+			
+			}
+		}
+	})
+	}
+function setText() { 
+	 var spname="p"+listnumber+i;
+	$("#namebox").append("&nbsp;&nbsp;&nbsp;<span style=\"display:none;\" class="+spname+">"+namelist[i]+"</span>");
+	$("."+spname).fadeIn(300);
+	i++;
+    if (i > len) { clearInterval(interval) ;
+}
+}
+function bgcx(){
+	$("#tip").unbind("click");
+	$("#tip").unbind("mouseleave");
+	$("#tip").html("02:00");
+	dt=setInterval(timeclock, 1000);
+	tt=setInterval(getname, 2000);
+	}
+var timeline=119;
+function timeclock(){
+	if(timeline<0){
+		clearInterval(dt);
+		clearInterval(tt);
+		setTimeout("$(\"#tip\").slideUp();",3000);
+		}
+	else{
+	var fen=parseInt(timeline/60)+'';
+	if(fen.length==1){
+		fen="0"+fen;
+		}
+	var miao=timeline%60+'';
+	if(miao.length==1){
+		miao="0"+miao;
+		}
+	var str=fen+":"+miao;
+	$("#tip").html(str);
+	timeline--;
+	}
+	}
+</script>
+</html>

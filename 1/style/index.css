@@ -1,0 +1,494 @@
+@charset "gb2312";
+/* CSS Document */
+*{
+	margin:0 auto;
+	padding:0;}
+body{
+	font-family:"Microsoft YaHei","Î¢ÈíÑÅºÚ","Ó×Ô²","ËÎÌå","sans-serif";
+	font-size:12px;
+	margin:0 auto;
+	}
+#topcenter{
+	width:100%;
+	height:auto;
+	}
+#topbar{
+	width:100%;
+	height:32px;
+	background:rgb(68,68,68);
+	margin:0 auto;
+	}
+#topbarcontent{
+	width:1000px;
+	height:32px;
+	}
+.selectid{
+	float:left;
+	line-height:32px;
+	font-size:12px;
+	color:#FFF;
+	width:500px;
+	overflow:hidden;
+	height:32px;
+	}
+.topbarlink{
+	line-height:32px;
+	padding:0px;
+	color:#FFF;
+	height:32px;
+	margin:0px 5px;
+	}
+.topbarlink a{
+	line-height:32px;
+	height:32px;
+	margin:0px 5px;
+	color:#FFF;
+	text-decoration:none;
+	}
+#information{
+	width:320px;
+	height:190px;
+	z-index:200;
+	position:absolute;
+	top:25px;
+	right:13%;
+	background:#FFF;
+	display:none;
+	}
+#information span{
+	font-size:26px;
+	height:30px;
+	color:#666;
+	margin-bottom:10px;
+	margin-left:20px;
+	border-bottom:1px solid #ccc;
+	}
+#information p{
+	color:#666;
+	font-size:14px;
+	margin-left:20px;
+	height:30px}
+.selectnormal{
+	float:right;
+	line-height:32px;
+	font-size:12px;
+	color:#FFF;
+	}
+.normal{
+	height:32px;
+	line-height:32px;
+	float:right;
+}
+
+.bb{
+	color:#FFF;
+	text-decoration:none;
+line-height:32px;
+	height:32px;
+	margin:0px 5px;
+	cursor:pointer;}
+.aa{
+	color:#FFF;
+	text-decoration:none;
+line-height:32px;
+	height:32px;
+	margin:0px 5px;
+	cursor:pointer;
+	}
+/*topbar */
+#logo{
+	height:87px;
+	width:100%;
+    background:url(../images/logobg.jpg) repeat-x scroll left top transparent;
+	margin:0px auto;
+	}
+.logopic{
+	width: 1000px;
+margin: 0px auto;
+height: 87px;
+background:url(../images/logo.png)  no-repeat scroll left top transparent;
+	}
+.home a{
+	float: left;
+    width: 488px;
+    height: 87px;
+	}
+/*logo end */
+#navbar{
+	background: url(../images/menubg.jpg) repeat-x scroll left top transparent;
+	height:38px;
+	width:100%;
+	}
+.navbarcontent{
+	width:1000px;
+	height:36px;
+	padding-top:2px;
+	}
+.navbarcontent ul{
+	list-style:none;
+	}
+.navbarcontent ul li{
+	float:left;
+	width:195px;
+	height:36px;
+	}
+.navbarcontent ul li a{
+	color:#b9e0ff;
+	text-decoration:none;
+	line-height:36px;
+	width:100%;
+	display:block;
+	font-size:14px;
+	text-align:center;
+	}
+.navbarcontent ul li a:hover{
+	color:#FFF;
+	background:#0062a8;
+	}
+/*navbar rnd */
+
+#activeimg{
+	width:100%;
+	display: block;
+    height: 350px;
+    margin: 0px auto;
+	background:#e5e5e5;
+	}
+.demoo{
+	width:1000px;
+	height:350px;
+}
+.bg_btn{
+	opacity:0.6;
+	}
+.bg_btn:hover{
+	opacity:1;
+	}
+/*img  end */
+#timetable{
+	width:100%;
+	height:140px;
+	background:rgb(239,239,239);
+	margin: 0px auto;
+	padding:12px 0px;
+	
+	}
+#timetablecontent{
+	width:1000px;
+	height:140px;
+	background:#FFF;
+	}
+#timeinner{
+	background:url(../images/timer.png) repeat-x;
+	width:800px;
+	height:140px;
+	float:right;
+	overflow:hidden;
+	}
+#timetitle{
+	width:200px;
+	height:140px;
+	background:#dedede;
+	float:left;
+	}
+#timeinner ul{
+	list-style:none;
+	width:100%;
+	}
+.timebiao li{
+	width:198px;
+	height:140px;
+	border:1px solid rgb(239,239,239);
+	float:left;
+	}
+.timebiao li a{
+	display:block;
+	height:140px;
+	width:100%;
+	color:inherit;
+	text-decoration:none;
+	}
+.active{
+	opactity:1;}
+.unactive{
+	opacity:0.6;}
+.timeli .timetime{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	font-size:14px;
+	color:#787878;
+	font-weight:bold;
+	text-align:center;
+	}
+.timeli .info{
+	width:100%;
+	height:46px;
+	margin-top:20px;
+	line-height:46px;
+	font-size:15px;
+	color:#005bb6;
+	font-weight:bold;
+	text-align:center;
+	}
+.timeli .addres{
+	width:100%;
+	height:30px;
+	line-height:30px;
+	font-size:12px;
+	text-align:center;
+	color:#787878;
+	}
+.shijianbiao{
+	height:60px;
+	line-height:60px;
+	color:#005bb6;
+	font-size:20px;
+	font-weight:bold;
+	background:url(../images/shijianpic.png) 0px 0px no-repeat ;;
+	-webkit-transition: all .3s ease-in-out;
+	  -o-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+	cursor:pointer;
+	}
+.shijianbiao:hover{
+	background:url(../images/shijianpic.png) 0px -60px no-repeat ;;
+	-webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+	}
+#donghua{
+	width:198px;height:140px;
+	border:2px solid #787878;
+	position:absolute;
+	top:520px;
+	left:376px;
+	z-index:999999;
+	cursor:pointer;}
+.todaytimeleft{
+	width:100px;
+	float:left;
+	margin-top:5px;
+	}
+.today{
+	margin-top:0px;
+	height:20px;
+	line-height:20px;
+	color:#005bb6;
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+	
+	}
+.todaytime{
+	height:20px;
+	line-height:20px;
+	color:#787878;
+	text-align:center;
+	font-size:14px;
+	}
+.todaytianqi{
+	height:50px;
+	float:right;
+	text-align:center;
+	margin-right:15px;
+	margin-top:5px;
+	}
+.nongli{
+	height:20px;
+	line-height:20px;
+	color:#787878;
+	text-align:center;
+	font-size:12px;
+	}
+.tq{
+	height:20px;
+	line-height:20px;
+	color:#787878;
+	text-align:center;
+	font-size:14px;
+	}
+/*timetable end*/
+#newsandpic{
+	width:100%;
+	height:250px;
+	margin:0px auto;
+	}
+#newsandpicconent{
+	width:1000px;
+	height:250px;
+	}
+#news{
+	margin-top:15px;
+	width:440px;
+	height:220px;
+	border:1px solid #D7D7D7;
+	float:left;
+	}
+.newshead{
+	width:440px;
+	height:35px;
+	background:#ececec;
+	}
+.ournews{
+	width:140px;
+	height:35px;
+	color:#005bb6;
+	font-size:18px;
+	line-height:35px;
+	text-align:center;
+	background:#fff;
+	float:left;
+	cursor:pointer;
+	}
+	.aboutmajor{
+	width:140px;
+	height:35px;
+	color:#005bb6;
+	font-size:18px;
+	line-height:35px;
+	text-align:center;
+	background:#ececec;
+	float:left;
+	cursor:pointer;
+	}
+#aboutmajorcontent{
+	width:400px;
+	height:220px;
+	text-align:center;
+	}
+.majorcontent{
+	width:360px;
+	height:200px;
+	text-align:center;
+	}
+.majorcontent p{
+	width:360px;
+	text-align:left;
+	height:20px;
+	line-height:20px;
+	font-size:14px;
+	color:rgb(102, 102, 102);;
+	overflow:hidden;
+	}
+.majorcontent a{
+	text-decoration:none;
+	color:rgb(102, 102, 102);;
+	}
+.majorcontent a:hover{
+	color:rgb(102, 102, 102);;
+	text-decoration:underline;
+	}
+.newsactive{
+	display:block;}
+.newsunactive{
+	display:none;}
+.newscontent{
+	margin:10px;
+	color: rgb(102, 102, 102);
+	width:430px;
+	overflow:hidden;
+	}
+.newscontent ul{
+		list-style:none;
+		width:410px;
+		height:150px;
+		
+		}
+.newscontent ul li a{
+	text-decoration:none;
+	color: rgb(102, 102, 102);}
+	.newscontent ul li a:hover{
+	text-decoration:underline;
+	color: rgb(102, 102, 102);}
+.newscontent a{
+	text-decoration:none;
+	color: rgb(102, 102, 102);}
+.newscontent a:hover{
+	text-decoration:underline;
+	color: rgb(102, 102, 102);}
+.newsitem{
+	width:340px;
+		height:26px;
+		line-height:26px;
+		float:left;
+		}
+.newstime{
+	float:left;}
+.majorcontent{
+	margin:5px;
+	font-size:14px;
+	color: rgb(102, 102, 102);}
+.ourstar{
+	width:520px;
+	height:210px;
+	float:left;
+	margin-left:15px;
+	margin-top:15px;
+	border:1px solid #A0A0A4;
+	padding:5px;
+	font-size:16px;
+	color:#005bb6;
+	}
+.video{
+	float:right;}
+	.pic{
+	float:left;}
+/*news end*/
+.onunactive{
+	display:none;
+	}
+#links{
+	width:100%;
+	height:200px;
+	margin:0px auto;
+	background:#4c4c4c;
+	
+	}
+.onlinks{
+	width:100%; text-align:center; font-size:16px; cursor:pointer;display:block;
+	}
+.offlinks{
+	width:100%; text-align:center; font-size:16px; cursor:pointer;display:none;
+	}
+#linksinner{
+	width:1200px;
+	height:200px;
+	background:url(../images/quicklinkbg.png) no-repeat;
+}
+#linkstable{
+	width:1000px;
+	height:130px;
+	color:#FFF;
+	}
+#linkstable tr{
+	width:500px;
+	height:25px;
+	}
+#linkstable a{
+	color: rgb(204, 204, 204);
+	text-decoration:none;}
+#linkstable a:hover{
+	color:#FFF;
+	text-decoration:none;}
+#linkstable tr td{
+	width:120px;
+	height:25px;
+	text-align:center;
+	}
+.xiaonei{float:left;}
+.xiaowai{float:right;}
+/*news end*/
+#copyright{
+	width:100%;
+	height:87px;
+	background:#2d2d2d;
+	}
+#copyright p{
+	padding-top:20px;
+	color:#FFF;
+	font-size:12px;
+	text-align:center;
+	line-height:13px;}
